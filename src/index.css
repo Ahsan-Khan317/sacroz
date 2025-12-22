@@ -1,0 +1,17 @@
+@import "tailwindcss";
+body{
+background: linear-gradient(135deg, #A67C52 0%, #D9CBB1 100%);
+
+
+
+
+
+
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
