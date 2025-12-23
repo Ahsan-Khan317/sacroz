@@ -18,11 +18,7 @@ const Home = () => {
         <Video />
         <CatalogueDetails />
         <Testimonials />
-      <h1 className="text-2xl font-bold">Home Page</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Facere numquam eveniet similique.
-      </p>
+      
     </div>
   );
 };
