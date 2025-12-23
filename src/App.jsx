@@ -5,10 +5,11 @@ import Navbar from "./components/navbar.jsx";
 import Footer from "./components/footer.jsx";
 import Loading from "./components/load.jsx";
 
+
 // Lazy-loaded pages
 const Home = lazy(() => import("./pages/home.jsx"));
 const About = lazy(() => import("./pages/about.jsx"));
-const Service = lazy(() => import("./pages/serv.jsx"));
+const Products = lazy(() => import("./pages/product.jsx"));
 const Contact = lazy(() => import("./pages/contact.jsx"));
 const LocateUs = lazy(() => import("./pages/loc.jsx"));
 
@@ -36,9 +37,10 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/service" element={<Service />} />
+    
           <Route path="/contact" element={<Contact />} />
           <Route path="/locate" element={<LocateUs />} />
+           <Route path="/products" element={<Products />} />
         </Routes>
          <Footer />
       </Suspense>

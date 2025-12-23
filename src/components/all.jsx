@@ -1,9 +1,10 @@
 import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const All= () => {
   const sliderRef = useRef(null);
-
+const navigate = useNavigate()
   const products = [
     "https://www.sacrozindustries.com/slide-3.jpg",
     "https://www.sacrozindustries.com/slide-2.jpg",
@@ -55,6 +56,9 @@ const All= () => {
       >
         {products.map((img, index) => (
           <div
+          onClick={()=>{
+            navigate("/products")
+          }}
             key={index}
             className="min-w-60 h-90 rounded-2xl overflow-hidden shadow-md bg-white group"
           >
